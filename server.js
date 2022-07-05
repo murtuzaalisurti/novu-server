@@ -8,7 +8,7 @@ app.post('/addsubs', async (req, res) => {
     try {
         await novu.subscribers.identify('unique_id', {
             email: 'example@hey.com',
-            firstName: 'Murtuza'
+            firstName: 'name'
         })
         res.status(200).json({success: true})
     } catch (error) {
